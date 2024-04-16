@@ -22,7 +22,7 @@ nav {
     text-align: center;
 }
 nav a {
-    color: #fff;
+    color: #f7f5f5;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -49,15 +49,30 @@ footer {
     float: right; 
     width: 25%;
 }
-.content1 {
-    position: absolute;
-    width: 40%;
-    left: 18%;
-    top: 40%;
-}
-.circle {
+.mainphoto
+
+.circle { 
     border-radius: 50%;
 }
 /* THIS LINE IS FOR THE HOME AND INDEX PHOTO  */
 
+.typing { display: inline-block;}
+.text{
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+    typing 2s,
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+@keyframes typing {
+    from { width: 0 }
+}
 </style>
