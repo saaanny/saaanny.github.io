@@ -48,8 +48,20 @@ footer {
 .mainphoto img {
     float: right; 
     width: 25%;
+    position: relative;
+    right: 5%;
+    top: 40px;
 }
 .mainphoto
+.content { display: inline-block;}
+.text1 {
+    font-size: 5em;
+    letter-spacing: 20px
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+
+}
 
 .circle { 
     border-radius: 50%;
@@ -69,6 +81,8 @@ footer {
     typing 2s,
     cursor .4s step-end infinite alternate;
 }
+/* END NI SA HI MY NAME */
+
 @keyframes cursor {
     50% { border-color: transparent}
 }
