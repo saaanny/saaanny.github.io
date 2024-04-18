@@ -1,44 +1,65 @@
 <style>
         
 img {
-    width: 300px;; 
+    width: 300px;
     height: auto; 
-    
 }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #E1EAEE;
+    
 }
+
+/*  text ni nga color */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #A1C8B3;
     padding: 10px;
     text-align: center;
 }
+h1 {
+    color: #090000;
+    font-size: 2em;
+    letter-spacing: 35px; 
+    text-align: center; 
+    width: auto;
+    font-style: monospace;
+    
+}
+/*  katong sa home experience contact */
 nav {
-    background-color: #444;
+    background-color: #320e15
     padding: 10px;
     text-align: center;
+   
+    
 }
+/* katong sa home experience contact */
+
+/* color styles sa home experience */
 nav a {
-    color: #f7f5f5;
+    color: #650505;
     text-decoration: none;
-    margin: 0 10px;
+    margin:  10px;
+   
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+/* Color styles sa home experience */
 
 footer {
-    background-color: #510808;
-    color: #fff;
+    background-color: #FCA67A;
+    color: #080000;
     padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
+
 
 /* THIS LINE IS FOR THE HOME AND INDEX PHOTO  */
 .mainphoto {
@@ -51,20 +72,30 @@ footer {
     position: relative;
     right: 5%;
     top: 40px;
+    animation: fade-up 0.5s;
 }
 .mainphoto
 .content { display: inline-block;}
-.text1 {
-    font-size: 5em;
+.text1 {   
+    text-align: center;
+    font-size: 4em;
     letter-spacing: 20px
     font-family: monospace;
-    border-right: 5px solid;
-    width: 100%;
+    width: 90%;
+    animation: fade-up 0.5s;
+}
 
+.text1 {
+    font-size: 2em;
+    letter-spacing: 15px;
+    font-family: monospace;
 }
 
 .circle { 
     border-radius: 50%;
+}
+.mainphoto{
+    animation: slide-in 2s linear infinite;
 }
 /* THIS LINE IS FOR THE HOME AND INDEX PHOTO  */
 
@@ -81,12 +112,43 @@ footer {
     typing 2s,
     cursor .4s step-end infinite alternate;
 }
+
+
+
+
 /* END NI SA HI MY NAME */
 
+
+
+/* FOR CURSOR ANIMATION */
 @keyframes cursor {
     50% { border-color: transparent}
 }
 @keyframes typing {
     from { width: 0 }
 }
+/* FOR CURSOR ANIMATION */
+/* FOR TEXT ANIMATION */
+@keyframes fade-up {
+    0% {
+     opacity: 0;
+     transform: translateY(30px) scale(0.9);
+    }
+    100% {
+     opacity: 1;
+     transform: translateY(0px) scale(1);
+    }
+ }
+
+@keyframes fade-down {
+   0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+   }
+   100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+   }
+}
+
 </style>
